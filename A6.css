@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: gray;
+    
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    
+    width: 60%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.nav-list{
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+
+}
+.burger{
+    display: none;
+position: absolute;
+right: 5%;
+top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.nav-list li{
+    list-style: none;
+    padding:  35px;
+
+}
+.nav-list li  a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+}
+.nav-list li  a:hover{
+    color: gray;
+}
+.rightnav{
+    padding: 0 23px;
+    width: 50%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.upper{
+    
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.upper h2{
+   font-size: 35px; 
+   text-align: center;
+}
+.upper p{
+    font-size: 20px;
+    padding-left: 30%;
+    padding-top: 10px;
+}
+.para{
+    margin-top: 40px;
+    margin-left: 32%;
+    width: 30%;
+
+}
+.para {
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    margin-top: 30px;
+    margin-left: 38%;
+    width: 20%;
+
+}
+.social i{
+    
+    margin-left: 10%;
+    font-size: 20px;
+}
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+    
+}
+.content p{
+    text-align: justify;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+@media(max-width:500px){
+    .upper{
+        margin: auto;
+        width: 90%;
+    }
+   .content{
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+   } 
+}
+@media(max-width:600px){
+    .nav-list{
+        flex-direction: column;
+       
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+        height: 500px;
+    }
+    
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+    height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+  }
+  .nav-links ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+
+
